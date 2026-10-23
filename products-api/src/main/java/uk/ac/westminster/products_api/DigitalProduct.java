@@ -5,7 +5,6 @@ public class DigitalProduct extends Product {
     private double fileSizeMB;
 
     public DigitalProduct() {
-
     }
 
     public DigitalProduct(Long id, String name, double price, String downloadUrl, double fileSizeMB) {
@@ -21,6 +20,5 @@ public class DigitalProduct extends Product {
     public double getFileSizeMB() {
         return fileSizeMB;
     }
-
 
 }
