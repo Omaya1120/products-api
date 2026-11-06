@@ -1,14 +1,15 @@
 package uk.ac.westminster.products_api;
 
-public class Product {
+public abstract class Product {
     private Long id;
     private String name;
     private double price;
 
 
     public Product() {
-
     }
+
+    public abstract String getSummary() ;
 
     public Product(Long id, String name, double price) {
         this.id = id;

@@ -45,4 +45,13 @@ public class ProductService {
                 nextId++, "27-inch Monitor", 249.99, 5.4, "61cm x 41cm x 18cm"));
     }
 
+    public List<String> getAllSummaries() {
+        List<String> summaries = new ArrayList<>();
+
+        for (Product p : products) {
+            summaries.add(p.getSummary());
+        }
+        return summaries;
+    }
+
 }
